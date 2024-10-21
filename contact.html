@@ -52,4 +52,76 @@
         <section>
 
         <div class="address">
-            <h1>Talk to 
+            <h1>Talk to Us</h1>
+
+            <div class="detailsWrapper">
+
+                 <div class="detail">
+                    <img src="img/email.png" alt="">
+                    <div class="text">
+                        <h6>Email</h6>
+                        <p>Smth@gmail.com</p>
+                    </div>
+                 </div>
+
+                 <div class="detail">
+                    <img src="img/phone.png" alt="">
+                    <div class="text">
+                        <h6>Number</h6>
+                        <p>1111111111</p>
+                    </div>
+                 </div>
+
+                 <div class="detail">
+                    <img src="img/location.png" alt="">
+                    <div class="text">
+                        <h6>Address</h6>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                 </div>
+
+                 <div class="detail">
+                    <img src="img/email.png" alt="">
+                    <div class="text">
+                        <h6>Email</h6>
+                        <p>Smth@gmail.com</p>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="follow-us-wrapper">
+                <h3>Follow us</h3>
+                <ul class="social-link">
+                    <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="img/linkedin.png" alt=""></a></li>
+                    <li><a href=""><img src="img/video.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+        <h1 class="logo">EARTH</h1>
+        <p>&copy Earth.All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn');
+        const navlinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',function(){
+            navlinks.classList.toggle('active');
+        })
+
+    </script>
+    
+</body>
+</html>
