@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-light: #74a84a;
+  --primary-dark: #2c541d;
+  --black: #000000;
+  --white: #efefef;
+  --fontofheaderh1: 60px;
+  --fontofheaderp: 40px;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 8px;;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* takes colour of its parent */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  font-size: 18px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: var(--fontofheaderh1);
+  color: var(--primary-dark);
+}
+
+.header-content p {
+  font-size: var(--fontofheaderp);
+  color: var(--primary-dark);
+}
+
+.primary-btn {
+  background-color: var(--primary-light);
+  color: var(--white);
+  border: none;
+  padding: 10px 24px;
+  margin-top: 20px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-dark);
+}
+#toggle-icon{
+  height: 20px;
+  width:auto;
+}
+.menu-btn {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color:rgba(128, 113, 113, 0.556);
+  padding: 5px 8px 3px 8px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 50px; */
+}
+
+/* for responsiveness */
+@media only screen and (max-width: 520px) {
+  header {
+    min-height: 100vh;
+    width: 100%;
+  }
+  .header-content h1 {
+    font-size: calc(0.5 * var(--fontofheaderh1));
+  }
+  .header-content p {
+    font-size: calc(0.5 * var(--fontofheaderp));
+  }.menu-btn{
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    align-items: end;
+    padding: 16px; /* Set padding value */
+    margin-right: -900px;
+    transition: all 0.3s ease;
+  }
+
+  nav ul.active {
+    margin-right: 0;
+     
+  }
+  
+  nav {
+    padding: 16px;
+  }
+  nav li {
+    border-bottom: 1px solid var(--primary-dark);
+    width: 100%;
+    /* padding:5px; */
+
+    text-align: right;
+  }
+
+  .nav-links{
+    padding: 80px 16px 40px 40px;
+  }
+
+  #contact-us{
+    flex-direction: column;
+  }
+}
+
+#services{
+  display: flex;
+  margin-top:40px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.service{
+  width: 300px;
+}
+
+.service p{
+  color: #3c3c3c;
+}
+.service h1{
+  color: var(--primary-light);
+}
+.service img{
+  max-width: 100%;
+}
+
+#about{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  padding: 10vh;
+}
+#about img{
+  max-width: 50%;
+}
+
+.about-content{
+  max-width: 500px;
+  margin:auto;
+}
+
+#talktuah {
+  margin-top: 40px;
+  display: flex;               /* Apply flexbox to center content */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;          /* Center vertically */
+  background-image: url('img/talk-to-us.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;             /* Ensure the height is enough to see the content */
+}
+
+.talktuah-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 50%;
+  text-align: center;           /* Center text inside the content */
+  
+}
+
+.talktuah-content button {
+  width: auto;                  /* Prevent the button from taking the full width */
+  padding: 10px 24px;           /* Adjust padding to your preference */
+  align-self: center;           /* Center the button horizontally */
+}
+
+h1{
+  color: var(--primary-dark);
+}
+
+.talktuah-content h1{
+  text-transform: uppercase;
+}
+
+.about-content h1{
+  text-transform: uppercase;
+}
+/* 
+footer{
+  padding: 16px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+  gap: auto;
+  padding: 0 30px;
+  justify-content: space-between;
+
+} */
+
+footer {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;  /* Spread the main sections */
+  align-items: center;
+  flex-wrap: wrap;                 /* Ensure it wraps if there's not enough space */
+  position: sticky;
+  background-color: lightblue;
+}
+
+footer .logo {
+  text-align: center;
+  flex: 1;                         /* Let the logo take up one part of the space */
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  flex: 1;                         /* Let the ul take up one part of the space */
+  justify-content: space-evenly;    /* Evenly space the li elements */
+  padding: 0;
+  margin: 0;
+}
+
+footer p {
+  flex: 1;                         /* Let the copyright text take up one part of the space */
+  text-align: right;                /* Align the text to the right */
+}
+
+footer ul li {
+  padding: 0 20px;                 /* Optional: add space around each item */
+}
+
+footer ul a {
+  text-decoration: none;
+  color: inherit;                  /* Make sure the links inherit the default text color */
+}
+
+
+.contact-header{
+  min-height: 400px;
+  background-image: url(img/contact-banner.png);
+}
+
+#contact-us{
+  display: flex;
+
+  margin: 10vh;
+  
+    
+}
+
+.input-wrapper{
+  margin-top: 5vh;
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+ 
+}
+form{
+  flex-basis: 50%;
+}
+
+.input-wrapper input{
+  padding: 10px 16px;
+  width: 100%;
+  border: 1px solid var(--primary-dark);
+
+}
+.follow-us-wrapper h3{
+  color: var(--primary-dark);
+}
+
+.detail{
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* padding-left: 20%; */
+  
+}
+
+
+
+.detailsWrapper{
+  margin-top:5vh ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 10px 10px;
+
+  
+}
+
+.social-link{
+  padding-left: 10px;
+
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+#contact-us h1{
+  font-size: 2rem;
+}
+
+
+
+#contact-us section{
+  padding: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+.address{
+  justify-content: center;
+  flex-basis: 50%;
+  padding-left: 10vw;
+}

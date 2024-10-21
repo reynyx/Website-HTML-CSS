@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>EARTH</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="menu-btn"><img src="img/menu.svg" alt="MenuToggle" id="toggle-icon"></div>
+                
+            </nav>
+            <div class="header-content">
+                <h1>Earth</h1>
+                <p>Endless Potential</p>
+                <button class="primary-btn">EXPLORE</button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="services" class="container">
+        
+            <div class="service">
+                <img src="img/service-1.png" alt="service-1">
+                <h1>Web Design</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nihil culpa nulla ea excepturi doloribus?</p>
+            </div>
+
+            <div class="service">
+                <img src="img/service-2.png" alt="service-2">
+                <h1>Graphic Design</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iusto error eos quasi tenetur voluptatum?</p>
+            </div>
+
+            <div class="service">
+                <img src="img/service-3.png" alt="service-3">
+                <h1>Content Creation</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quis minima consequuntur laborum nostrum eligendi.</p>
+            </div>
+        
+    </section>
+
+    <section id="about" class="container">
+         <div class="about-content">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique quo dolorum cupiditate hic quaerat libero voluptas assumenda perspiciatis minus.</p>
+         </div>
+         <img src="img/about.png" alt="about">
+    </section>
+
+    <section id="talktuah">
+        <div class="talktuah-content">
+            <h1>Talk To Us</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi enim commodi minima aperiam alias? Dolore non cupiditate quisquam eum illo.</p>
+            <button class="primary-btn">Get in touch</button>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+        <h1 class="logo">EARTH</h1>
+        <p>&copy Earth.All rights reserved.</p>
+    </footer>
+    <script>
+        const menuBtn=document.querySelector('.menu-btn');
+        const navlinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',function(){
+            navlinks.classList.toggle('active');
+        })
+
+    </script>
+    
+</body>
+</html>
